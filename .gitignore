@@ -1,0 +1,45 @@
+# Ignore data and processed data contents (but keep directories)
+/data/**
+!/data/.gitkeep
+
+/data_processed/**
+!/data_processed/.gitkeep
+
+# Ignore processed archive at repo root
+/data_processed.tar.gz
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
+
+# Project outputs (keep folders with .gitkeep)
+/output/**
+!/output/.gitkeep
+OpenAlex-Citation-Analyzer/OpenAlex-Citation-Analyzer/outputs/**
+!OpenAlex-Citation-Analyzer/OpenAlex-Citation-Analyzer/outputs/.gitkeep
+OpenAlex-Citation-Analyzer/OpenAlex-Citation-Analyzer/sentence_id.csv
+
+# Archives
+*.tar.gz
+*.zip
